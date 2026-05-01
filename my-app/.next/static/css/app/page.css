@@ -1,0 +1,893 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./components/Categories.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.categories {
+  padding: 4rem 0;
+  background: var(--bg-color);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.category-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.category-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.category-image {
+  width: 100%;
+  height: 220px !important;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.category-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.category-item p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  min-height: 48px;
+  line-height: 1.5;
+}
+
+.category-item .btn {
+  display: inline-block;
+  background: var(--brand-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  align-self: center;
+  width: 120px;
+}
+
+.category-item .btn:hover {
+  background: var(--hover-color);
+}
+
+@media (max-width: 1024px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .category-image {
+    height: 220px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .categories {
+    padding: 3rem 1rem;
+  }
+  
+  .category-image {
+    height: 200px !important;
+  }
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.load-more-btn {
+  background: var(--brand-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background: var(--brand-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./components/Features.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.features {
+  background: var(--bg-primary);
+  padding: 4rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.feature-item p {
+  color: var(--text-secondary);
+}
+
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./components/HappyHours.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.happy-hours {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-color: #1a1a1a; /* Fallback color */
+  padding: 4rem 0;
+  color: white;
+  position: relative;
+}
+
+.happy-hours::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9); /* Lighter overlay for better contrast */
+}
+
+.happy-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.happy-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000; /* Changed to black */
+}
+
+.happy-content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000; /* Changed to black */
+}
+
+.happy-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000; /* Changed to black */
+}
+
+.happy-content .discount {
+  font-size: 2.5rem;
+  color: #000; /* Changed to black */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.happy-content .btn {
+  display: inline-block;
+  background: #000; /* Changed button to black */
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.happy-content .btn:hover {
+  transform: translateY(-3px);
+  background: #333; /* Slightly lighter on hover */
+}
+
+
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./components/ThemeColors.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+:root[data-theme="light"] {
+  /* Backgrounds */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8f8;
+  --card-bg: #ffffff;
+  --nav-bg: #2f8d46;  /* GeeksForGeeks green */
+  
+  /* Text */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --text-nav: #ffffff;
+  
+  /* Accent Colors */
+  --brand-color: #308d46;     /* Primary green */
+  --brand-hover: #2f8d46;     /* Darker green */
+  --accent-light: #e7f3e9;    /* Light green bg */
+  --success-color: #308d46;
+  --warning-color: #f48024;   /* Orange */
+  
+  /* UI */
+  --border-light: #e2e8f0;
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+:root[data-theme="dark"] {
+  /* Backgrounds */
+  --bg-primary: #0a1929;      /* Dark blue background */
+  --bg-secondary: #132f4c;    /* Slightly lighter blue */
+  --card-bg: #132f4c;
+  --nav-bg: #1a1a1a;
+  
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #b2bac2;
+  --text-muted: #7d8a96;
+  --text-nav: #ffffff;
+  
+  /* Accent Colors */
+  --brand-color: #308d46;     /* Keep green for brand recognition */
+  --brand-hover: #2f8d46;
+  --accent-light: #132f4c;
+  --success-color: #308d46;
+  --warning-color: #f48024;
+  
+  /* UI */
+  --border-light: #1e3a5f;
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.4);
+} 
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./components/Hero.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/* Import theme colors */
+
+.hero {
+  background: var(--bg-primary);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-content {
+  width: 100%;
+  padding: 2rem;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: var(--shadow-small);
+}
+
+.slider-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.hero-image {
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  color: var(--text-primary);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-text h3 {
+  color: var(--brand-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: var(--brand-color);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  min-width: 180px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: var(--brand-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider-button {
+  background: var(--brand-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.slider-button:hover {
+  background: var(--brand-hover);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-button.prev { left: -20px; }
+.slider-button.next { right: -20px; }
+
+.slider-dots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: var(--brand-color);
+  transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .slider-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-image {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 280px !important;
+    height: 280px !important;
+    padding: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .slider-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    min-width: 140px;
+  }
+}
+
+/* chatgpt code: */
+
+.hero-btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.05rem;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #66ff66;
+  color: ghostwhite;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-btn span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s;
+}
+
+.hero-btn:hover span {
+  color: black;
+}
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: #000;
+  transform: skew(30deg) translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  z-index: 1;
+}
+
+.hero-btn:hover::before {
+  transform: skew(30deg) translateX(100%);
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./components/Products.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+/* Theme variables */
+:root[data-theme="light"] {
+  --bg-color: #fff;
+  --text-color: #000;
+  --brand-color: #2563eb;
+  --hover-color: #1d4ed8;
+  --dropdown-bg: #fff;
+  --dropdown-hover: #f7fafc;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --bg-secondary: #f8f9fa;
+  --text-secondary: #1a1a1a;
+  --tagline-color: #1f1f1f;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #1a202c;
+  --text-color: #fff;
+  --brand-color: #60a5fa;
+  --hover-color: #93c5fd;
+  --dropdown-bg: #2d3748;
+  --dropdown-hover: #4a5568;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --bg-secondary: #2d3748;
+  --text-secondary: #e2e8f0;
+  --tagline-color: #e5e5e5;
+}
+
+.products {
+  padding: 6rem 2rem;
+  background: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 0 auto;
+  max-width: 1100px;
+  transition: transform 0.3s ease;
+}
+
+.product-item {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.product-image {
+  width: 100%;
+  height: 220px !important;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.btn {
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 200px;
+}
+
+.btn:hover {
+  background: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .slider-container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .products {
+    padding: 4rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .slider-container {
+    padding: 0 20px;
+  }
+  
+  .slider-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+.slider-container {
+  position: relative;
+  padding: 0 40px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.slider-button:hover {
+  background: var(--hover-color);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-button.prev {
+  left: 0;
+}
+
+.slider-button.next {
+  right: 0;
+}
+
+.tagline {
+  color: var(--tagline-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dot.active {
+  background: var(--brand-color);
+  transform: scale(1.2);
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.load-more-btn {
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  padding: 0.875rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.load-more-btn:active {
+  transform: translateY(0);
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./components/RecentNews.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.recent-news {
+  padding: 4rem 0;
+  background: var(--bg-primary);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.news-item {
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-small);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.news-image {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover;
+}
+
+.news-item h3 {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.news-item p {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-weight: 350;
+}
+
+.news-item .btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  background: var(--brand-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: auto;
+  min-width: 120px;
+  text-align: center;
+}
+
+.news-item .btn:hover {
+  background: var(--brand-hover);
+  transform: translateX(-50%) translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .news-item .btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+

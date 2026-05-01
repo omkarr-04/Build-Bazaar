@@ -1,0 +1,26 @@
+@import './components/ThemeColors.css';
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.container {
+  background-color: var(--bg-primary);
+}
+
+.btn {
+  background: var(--brand-color);
+  color: var(--bg-primary);
+}
+
+.btn:hover {
+  background: var(--hover-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+

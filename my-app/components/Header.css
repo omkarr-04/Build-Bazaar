@@ -1,0 +1,454 @@
+.header {
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 64px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--brand-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul li a,
+nav ul li button {
+  color: #374151;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  background: none;
+  border: none;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown > button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  font-weight: 500;
+  color: #374151;
+}
+
+.dropdown > button::after {
+  content: "▾";
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+  position: relative;
+  top: 1px;
+}
+
+.dropdown:hover > button::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: -20px;
+  background: #ffffff;
+  min-width: 200px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 4px 0;
+}
+
+.dropdown-content li {
+  margin: 0;
+  border: none;
+  display: block;
+}
+
+.dropdown-content li button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #1a202c;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1.4;
+  font-weight: normal;
+  white-space: nowrap;
+  display: block;
+}
+
+.dropdown-content li button:hover {
+  background-color: #f7fafc;
+  color: #2563eb;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: dropdownFade 0.15s ease;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .dropdown-content {
+  background: #2d2d2d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .dropdown-content li {
+  border-bottom: 1px solid #3d3d3d;
+}
+
+[data-theme="dark"] .dropdown-content li a {
+  color: #fff;
+  background: #2d2d2d;
+}
+
+[data-theme="dark"] .dropdown-content li a:hover {
+  background-color: #3d3d3d;
+}
+
+/* Dropdown arrow */
+.dropdown > a::after {
+  display: none;
+}
+
+.cart-icon {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  color: var(--text-color);
+}
+
+.cart-icon:hover {
+  /* background: var(--bg-secondary);
+  color: var(--brand-color);
+  transform: translateY(-2px); */
+  color: rgb(95, 165, 250);
+  background: #f4f6f9;
+  border-color: rgb(95, 165, 250);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+  transform: scale(1.1);
+}
+
+.cart-icon svg {
+  stroke-width: 1.5px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: rgb(95, 165, 250);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0.75rem;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-link:hover {
+  color: var(--brand-color);
+}
+
+/* Optional: Add these keyframes if you want more animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.group:hover .animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+nav,
+nav ul,
+nav ul li {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ChatGPT Code:  */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(95, 165, 250);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.nav button {
+  background: transparent;
+  border: none;
+  padding: 6px 14px;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.nav button:hover {
+  background: #eff6ff;
+  color: rgb(95, 165, 250);
+}
+
+.header-search {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE USER ACTIONS */
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 12px;
+}
+
+/* Profile icon button */
+.profile-btn {
+  height: 40px;
+  width: 40px;
+
+  border-radius: 10px; 
+  border: 2px solid #e2e8f0;
+  /* padding: 12px; */
+
+  background: white;
+  color: #64748b;
+
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.profile-btn:hover {
+  color: rgb(95, 165, 250);
+  background: #f4f6f9;
+  border-color: rgb(95, 165, 250);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+  transform: scale(1.1);
+}
+
+/* Logout button */
+/* Logout animated button */
+.logout-anim-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  margin-left: 8px;
+}
+
+.logout-anim-btn:hover {
+  width: 120px;
+  background-color: #fff1f1;
+  border-color: #f3b4b4;
+}
+
+.logout-sign {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.logout-sign svg {
+  width: 16px;
+}
+
+.logout-sign svg path {
+  fill: #b42323;
+}
+
+  .logout-text {
+    position: absolute;
+    left: 13px;
+    right: 5px;
+    opacity: 0;
+    white-space: nowrap;
+    color: #b42323;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .logout-anim-btn:hover .logout-sign {
+    width: 30%;
+  }
+
+  .logout-anim-btn:hover .logout-text {
+    opacity: 1;
+  }
+
+/* Chat button */
+.chat-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #64748b;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.chat-btn .chat-icon {
+  width: 20px;
+  height: 20px;
+  color: inherit;
+}
+
+.chat-btn:hover {
+  color: rgb(95, 165, 250);
+  background: #f4f6f9;
+  border-color: rgb(95, 165, 250);
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+}
+
+.chat-btn:focus-visible,
+.chat-btn:focus {
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
+}
+

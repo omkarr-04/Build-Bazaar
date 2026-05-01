@@ -1,0 +1,5 @@
+.image-slider-track {
+  display: flex;
+  transition: transform 500ms ease-out;
+  transform: translateX(calc(-1 * var(--slide-offset, 0%)));
+}

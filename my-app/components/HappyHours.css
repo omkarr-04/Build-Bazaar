@@ -1,0 +1,68 @@
+.happy-hours {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-color: #1a1a1a; /* Fallback color */
+  padding: 4rem 0;
+  color: white;
+  position: relative;
+}
+
+.happy-hours::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9); /* Lighter overlay for better contrast */
+}
+
+.happy-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.happy-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000; /* Changed to black */
+}
+
+.happy-content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000; /* Changed to black */
+}
+
+.happy-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000; /* Changed to black */
+}
+
+.happy-content .discount {
+  font-size: 2.5rem;
+  color: #000; /* Changed to black */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.happy-content .btn {
+  display: inline-block;
+  background: #000; /* Changed button to black */
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.happy-content .btn:hover {
+  transform: translateY(-3px);
+  background: #333; /* Slightly lighter on hover */
+}
+

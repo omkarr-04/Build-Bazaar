@@ -1,0 +1,51 @@
+:root[data-theme="light"] {
+  /* Backgrounds */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8f8;
+  --card-bg: #ffffff;
+  --nav-bg: #2f8d46;  /* GeeksForGeeks green */
+  
+  /* Text */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --text-nav: #ffffff;
+  
+  /* Accent Colors */
+  --brand-color: #308d46;     /* Primary green */
+  --brand-hover: #2f8d46;     /* Darker green */
+  --accent-light: #e7f3e9;    /* Light green bg */
+  --success-color: #308d46;
+  --warning-color: #f48024;   /* Orange */
+  
+  /* UI */
+  --border-light: #e2e8f0;
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+:root[data-theme="dark"] {
+  /* Backgrounds */
+  --bg-primary: #0a1929;      /* Dark blue background */
+  --bg-secondary: #132f4c;    /* Slightly lighter blue */
+  --card-bg: #132f4c;
+  --nav-bg: #1a1a1a;
+  
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #b2bac2;
+  --text-muted: #7d8a96;
+  --text-nav: #ffffff;
+  
+  /* Accent Colors */
+  --brand-color: #308d46;     /* Keep green for brand recognition */
+  --brand-hover: #2f8d46;
+  --accent-light: #132f4c;
+  --success-color: #308d46;
+  --warning-color: #f48024;
+  
+  /* UI */
+  --border-light: #1e3a5f;
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.4);
+} 

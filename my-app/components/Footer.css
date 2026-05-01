@@ -1,0 +1,135 @@
+/* Theme variables */
+:root[data-theme="light"] {
+  --footer-bg: #ffffff;          /* Pure white background */
+  --footer-text: #000000;        /* Pure black text */
+  --footer-border: #e5e5e5;      /* Light gray border */
+  --footer-hover: #2563eb;       /* Blue hover color */
+}
+
+:root[data-theme="dark"] {
+  --footer-bg: #000000;          /* Pure black background */
+  --footer-text: #ffffff;        /* Pure white text */
+  --footer-border: #333333;      /* Dark gray border */
+  --footer-hover: #60a5fa;       /* Light blue hover color */
+}
+
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  color: var(--text-primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.footer-section p,
+.footer-section a {
+  color: var(--text-secondary);
+}
+
+.footer-section a:hover {
+  color: var(--accent-color);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--footer-hover);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: var(--footer-text);
+}
+
+.contact-item:hover {
+  color: var(--footer-hover);
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--footer-border);
+  color: var(--text-tertiary);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 1rem 1.5rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+}
+
+.footer-logo {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-logo:hover {
+  color: var(--brand-color);
+}
+
+.footer-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: inherit;
+  text-align: left;
+}
+
+.footer-link:hover {
+  color: var(--brand-color);
+}
+
