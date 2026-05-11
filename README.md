@@ -1,6 +1,4 @@
 # BuildBazaar
-
-<<<<<<< HEAD
 A full-stack e-commerce platform for building custom PCs. BuildBazaar allows users to browse components, build their own PC configurations, manage shopping carts, place orders, and interact with an AI chatbot for assistance.
 
  Tech Stack
